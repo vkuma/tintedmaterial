@@ -35,11 +35,11 @@ class Sidebar extends React.Component {
   render() {
     const { navCollapsed, colorOption } = this.props;
     let toggleIcon = null;
-    if (navCollapsed) {
-      toggleIcon = <i className="material-icons">radio_button_unchecked</i>;
-    } else {
-      toggleIcon = <i className="material-icons">radio_button_checked</i>;
-    }
+    // if (navCollapsed) {
+    //   toggleIcon = <i className="material-icons">radio_button_unchecked</i>;
+    // } else {
+    //   toggleIcon = <i className="material-icons">radio_button_checked</i>;
+    // }
 
     return (
       <nav
@@ -57,6 +57,7 @@ class Sidebar extends React.Component {
             'bg-color-warning': ['15', '25', '35'].indexOf(colorOption) >= 0,
             'bg-color-danger': ['16', '26', '36'].indexOf(colorOption) >= 0 })}
                 >
+          {/* Logo beside the app name in the SideNav */}
           <svg className="logo-img logo-react" viewBox="0 0 3925 3525" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <circle className="react-dot" stroke="none" cx="1960" cy="1760" r="355" />
             <g className="react-curve" strokeWidth="170" fill="none">
@@ -66,9 +67,9 @@ class Sidebar extends React.Component {
             </g>
           </svg>
           <Link to="/" className="brand">{APPCONFIG.brand}</Link>
-          <a href={DEMO.link} className="collapsednav-toggler" onClick={this.onToggleCollapsedNav}>
+          {/* <a href={DEMO.link} className="collapsednav-toggler" onClick={this.onToggleCollapsedNav}>
             {toggleIcon}
-          </a>
+          </a> */}
         </section>
 
         <section className="sidebar-content">

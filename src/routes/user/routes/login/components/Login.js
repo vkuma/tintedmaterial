@@ -3,6 +3,7 @@ import APPCONFIG from 'constants/appConfig';
 import TextField from '@material-ui/core/TextField';
 import QueueAnim from 'rc-queue-anim';
 import DEMO from 'constants/demoData';
+import SITE from 'constants/siteData'
 import fakeAuth from '../../../../../actions/userActions';
 
 // import React, { Component } from 'react';
@@ -35,7 +36,7 @@ class Login extends React.Component {
     const { redirectToReferrer } = this.state
 
     if (redirectToReferrer === true) {
-      return <Redirect to='/app/dashboard' />
+      return <Redirect to={SITE.home} />
     }
 
     return (
@@ -68,7 +69,7 @@ class Login extends React.Component {
             </form>
           </div>
           <div className="card-action border-0 text-right">
-            <a href="#/" className="color-primary" onClick={this.login}>Login</a>
+            <a className="color-primary" onClick={this.login}>Login</a>
           </div>
         </div>
 

@@ -5,6 +5,11 @@
   background-color: #fff;
 }
 
+.card-danger {
+  color: $body-color;
+  background-color: #D32F2F;
+}
+
 // 
 .item-card {
   position: relative;
@@ -26,6 +31,16 @@
     height: 300px;
     border-radius: $border-radius $border-radius 0 0;
     background-color: rgba(#000, .035);
+    text-align: center;
+  }
+
+  .card__imageDanger {
+    display: block;
+    text-decoration: none;
+    padding: 30px 15px;
+    height: 300px;
+    border-radius: $border-radius $border-radius 0 0;
+    background-color: rgba(#D32F2F, .035);
     text-align: center;
   }
 

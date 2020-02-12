@@ -48,6 +48,15 @@ let Exception = loadable({
 
 
 
+// My loadable components
+
+let Home = loadable({
+  loader: () => import('routes/app/routes/home/'),
+  loading: LoadingComponent
+})
+
+
+
 class MainApp extends React.Component {
 
   render() {
@@ -63,15 +72,17 @@ class MainApp extends React.Component {
           <div className="app-content-wrapper">
             <div className="app-content">
               <div className="h-100">
-                <Route path={`${match.url}/dashboard`} component={Dashboard} />
-                <Route path={`${match.url}/chart`} component={Chart} />
+                {/* <Route path={`${match.url}/dashboard`} component={Dashboard} /> */}
+                {/* <Route path={`${match.url}/chart`} component={Chart} />
                 <Route path={`${match.url}/ecommerce`} component={ECommerce} />
                 <Route path={`${match.url}/form`} component={Form} />
                 <Route path={`${match.url}/page`} component={Page} />
                 <Route path={`${match.url}/pglayout`} component={PageLayout} />
                 <Route path={`${match.url}/table`} component={Table} />
                 <Route path={`${match.url}/ui`} component={UI} />
-                <Route path={`${match.url}/exception`} component={Exception} />
+                <Route path={`${match.url}/exception`} component={Exception} /> */}
+
+                <Route path={`${match.url}/home`} component={Home} />
               </div>
             </div>
 
@@ -79,7 +90,7 @@ class MainApp extends React.Component {
           </div>
         </section>
 
-        <Customizer />
+        {/* <Customizer /> */}
       </div>
     );
   }

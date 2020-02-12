@@ -51,13 +51,13 @@ class NavRightList extends React.Component {
 
     return (
       <ul className="list-unstyled float-right">
-        <li className="list-inline-item search-box seach-box-right d-none d-md-inline-block">
+        {/* <li className="list-inline-item search-box seach-box-right d-none d-md-inline-block">
           <div className="search-box-inner">
             <div className="search-box-icon"><MaterialIcon icon="search" /></div>
             <input type="text" placeholder="search..." />
             <span className="input-bar"></span>
           </div>
-        </li>
+        </li> */}
         <li style={{marginRight: '10px'}}>
           <IconButton
             className="header-btn"
@@ -68,7 +68,7 @@ class NavRightList extends React.Component {
             <Avatar alt="avatar" src="assets/images-demo/g1.jpg" className="rounded-circle header-avatar" />
           </IconButton>
 
-          <Menu
+          {/* <Menu
             id="app-header-menu"
             className="app-header-dropdown"
             anchorEl={anchorEl}
@@ -82,7 +82,7 @@ class NavRightList extends React.Component {
             <MenuItem onClick={this.handleClose}> <a href="#/app/page/services"> <i className="material-icons">help</i> <span>Need Help?</span> </a> </MenuItem>
             <div className="divider divider-solid my-1"></div>
             <MenuItem onClick={() => { this.handleClose(); this.logout();}}> <a > <i className="material-icons">forward</i> <span>Log Out</span> </a> </MenuItem>
-          </Menu>
+          </Menu> */}
         </li>
       </ul>
     );

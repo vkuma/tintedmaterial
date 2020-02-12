@@ -33,66 +33,12 @@ class NavLeftList extends React.Component {
             <IconButton
               aria-label="notifications"
               className="header-btn"
-              aria-owns={anchorEl ? 'header-long-menu' : null}
-              aria-haspopup="true"
-              onClick={this.handleClick}
+              // aria-owns={anchorEl ? 'header-long-menu' : null}
+              // aria-haspopup="true"
+              // onClick={this.handleClick}
             >
               <i className="material-icons">notifications_none</i>
             </IconButton>
-            <Menu
-              id="header-long-menu"
-              anchorEl={anchorEl}
-              open={Boolean(anchorEl)}
-              onClose={this.handleClose}
-            >
-              <MenuItem>
-                <ListItemIcon>
-                  <i className="material-icons">mail_outline</i>
-                </ListItemIcon>
-                <ListItemText inset primary="New mail from Susan" />
-                <ListItemSecondaryAction className="small mr-2">
-                  5min ago
-                </ListItemSecondaryAction>
-              </MenuItem>
-              <MenuItem>
-                <ListItemIcon>
-                  <i className="material-icons">mail_outline</i>
-                </ListItemIcon>
-                <ListItemText inset primary="New mail from John" />
-                <ListItemSecondaryAction className="small mr-2">
-                  1h ago
-                </ListItemSecondaryAction>
-              </MenuItem>
-              <Divider />
-              <MenuItem>
-                <ListItemIcon>
-                  <i className="material-icons">chat_bubble_outline</i>
-                </ListItemIcon>
-                <ListItemText inset primary="Message from Anna" />
-                <ListItemSecondaryAction className="small mr-2">
-                  5min ago
-                </ListItemSecondaryAction>
-              </MenuItem>
-              <MenuItem>
-                <ListItemIcon>
-                  <i className="material-icons">chat_bubble_outline</i>
-                </ListItemIcon>
-                <ListItemText inset primary="Message from Jane" />
-                <ListItemSecondaryAction className="small mr-2">
-                  1h ago
-                </ListItemSecondaryAction>
-              </MenuItem>
-              <Divider />
-              <MenuItem>
-                <ListItemIcon>
-                  <i className="material-icons">notifications_none</i>
-                </ListItemIcon>
-                <ListItemText inset primary="Copy task completed" />
-                <ListItemSecondaryAction className="small mr-2">
-                  1h ago
-                </ListItemSecondaryAction>
-              </MenuItem>
-            </Menu>
           </div>
         </li>
       </ul>

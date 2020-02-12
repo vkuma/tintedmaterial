@@ -7,6 +7,7 @@ import NavLeftList from './NavLeftList';
 import NavRightList from './NavRightList';
 import $ from 'jquery';
 import DEMO from 'constants/demoData';
+import SITE from 'constants/siteData'
 
 
 class Header extends React.Component {
@@ -37,7 +38,7 @@ class Header extends React.Component {
             'bg-color-danger': ['26', '36'].indexOf(colorOption) >= 0 })}
         >
           <div className="d-lg-none d-xl-none float-left">
-            <a href={DEMO.link} className="header-icon toggle-sidebar-btn" ref={(c) => { this.sidebarBtn = c; }}>
+            <a href={SITE.home} className="header-icon toggle-sidebar-btn" ref={(c) => { this.sidebarBtn = c; }}>
               <i className="material-icons">menu</i>
             </a>
           </div>
